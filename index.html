@@ -3,115 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratyush Saini | Personal Website</title>
+    <title>Pratyush Saini - AI Enthusiast</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #3B82F6;
+            --secondary-color: #8B5CF6;
+            --accent-color: #F472B6;
+            --background-color: #0F172A;
+            --text-color: #E2E8F0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            overflow-x: hidden;
         }
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+        .sexy-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%),
+                radial-gradient(at 50% 0%, rgba(244, 114, 182, 0.2) 0%, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            z-index: -1;
         }
 
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+        .sexy-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.05;
         }
 
-        .header-content img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 10px;
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
         }
 
-        .container {
-            width: 80%;
-            margin: auto;
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .portfolio-item {
             overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        #main {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
+        .portfolio-item img {
+            transition: transform 0.5s ease;
         }
 
-        section {
-            margin: 20px 0;
+        .portfolio-item:hover img {
+            transform: scale(1.1) rotate(2deg);
         }
 
-        h1, h2 {
-            color: #333;
+        .blog-post {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #1A202C; /* Dark gray color for text */
         }
 
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+        .blog-post h3 {
+            color: #2D3748; /* Slightly lighter than the body text for headers */
         }
 
-        a {
-            color: #333;
-            text-decoration: none;
+        .blog-post p {
+            color: #4A5568; /* Medium gray for paragraph text */
         }
 
-        a:hover {
-            color: #555;
+        .blog-post a {
+            color: var(--primary-color); /* Use the primary color for links */
+            transition: color 0.3s ease;
+        }
+
+        .blog-post a:hover {
+            color: var(--secondary-color); /* Change link color on hover */
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px) rotate(1deg);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px) rotate(1deg);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            box-shadow: 0 0 0 2px var(--accent-color);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .button {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="profile.jpg" alt="Pratyush Saini">
-            <h1>Pratyush Saini</h1>
-            <p>AI Engineer | Developer | Innovator</p>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="font-bold text-2xl gradient-text">Pratyush Saini</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-800 hover:text-blue-500 transition duration-300">About</a>
+                    <a href="#blog" class="text-gray-800 hover:text-blue-500 transition duration-300">Blog</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 hover:text-blue-500 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-cover bg-center h-screen relative" style="background-image: url('header-image.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="w-40 h-40 mx-auto mb-6 overflow-hidden rounded-full border-4 border-white shadow-lg relative">
+                    <img src="profile.jpg" alt="Profile Photo" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover">
+                </div>
+                <h1 class="text-white text-5xl font-bold mb-4">Pratyush Saini</h1>
+                <p class="text-white text-xl mb-8">AI Enthusiast</p>
+                <p class="text-white text-xl mb-8">
+                    Founding Engineer at <a href="https://www.simbian.ai" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-100 underline transition duration-300">SimbianAI</a>
+                  </p>
+                
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                    Get in Touch
+                </a>
+            </div>
         </div>
     </header>
 
-    <div class="container" id="main">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Pratyush Saini, an AI Engineer with a passion for building innovative solutions using machine learning and natural language processing. With a background in Computer Science and Engineering from IIT Delhi, I've worked on various cutting-edge projects that combine AI with real-world applications.</p>
-        </section>
+    <section id="about" class="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">About Me</h2>
+            <div class="flex flex-col md:flex-row items-stretch justify-between">
+                <div class="md:w-2/5 mb-8 md:mb-0 relative overflow-hidden" data-aos="fade-right" style="min-height: 400px;">
+                    <img src="profile.jpg" alt="Pratyush Saini" class="absolute inset-0 w-full h-full object-cover object-center">
+                </div>
+                <div class="md:w-1/2 md:pl-12 flex flex-col justify-center" data-aos="fade-left">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Hello! I'm Pratyush Saini, an AI Engineer with a burning passion for pushing the boundaries of artificial intelligence. My journey in the world of AI began at the prestigious Indian Institute of Technology (IIT) Delhi, where I honed my skills in Computer Science and Engineering, laying the foundation for my future innovations.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        My professional journey led me to ThirdAI Corp, where I've been at the forefront of developing cutting-edge RAG (Retrieval-Augmented Generation) Systems using ThirdAI's NeuralDB. This experience has allowed me to dive deep into the fascinating world of machine learning and natural language processing, creating solutions that bridge the gap between AI and real-world applications.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        What drives me is the potential of AI to transform industries and improve lives. Whether it's enhancing decision-making processes, automating complex tasks, or uncovering insights from vast amounts of data, I'm always excited to tackle new challenges and push the boundaries of what's possible with AI.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                            View My Projects
+                        </a>
+                        <a href="#" class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="work">
-            <h2>Work</h2>
-            <p>I have worked as an AI Engineer at ThirdAI Corp, where I focused on building RAG Systems using ThirdAI's NeuralDB technology. My experience includes working with clients like Wayfair, Fortanix, and LTI Mindtree to deliver impactful AI-driven solutions.</p>
-        </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Machine Learning & AI</li>
-                <li>Natural Language Processing</li>
-                <li>Neural Networks</li>
-                <li>Embedding Models</li>
-                <li>Web Development</li>
-            </ul>
-        </section>
+    <section id="blog" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Blogs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="https://medium.com/thirdai-blog/relevant-and-helpful-ai-agents-leveraging-interaction-data-573fa2083b0f" class="block">
+                    <div class="blog-post bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+                        <img src="blog-image1.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Relevant and Helpful AI Agents Leveraging Interaction Data</h3>
+                            <p class="text-gray-700 mb-4">Explore how AI agents can be significantly improved by utilizing past user interactions and data logs</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me at <a href="mailto:pratyush@example.com">pratyush@example.com</a> or connect with me on <a href="#">LinkedIn</a>.</p>
-        </section>
-    </div>
+    <section id="contact" class="bg-gray-800 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Get in Touch</h2>
+            <form class="w-full max-w-lg mx-auto contact-form" data-aos="fade-up">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="email" type="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="message">
+                            Message
+                        </label>
+                        <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button" onclick="submitForm()">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Pratyush Saini. All Rights Reserved.</p>
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-white">
+            <div class="mb-6">
+                <a href="https://twitter.com/yourprofile" class="mx-3 text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="mx-3 text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/yourprofile" class="mx-3 text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+            <p>&copy; 2023 Pratyush Saini. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        
+        function submitForm() {
+            // Add your form submission logic here
+            alert('Form submitted successfully!');
+        }
+    </script>
 </body>
 </html>
